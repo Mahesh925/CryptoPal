@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:auto;
+    font-family: 'poppins',sans-serif;
+}
+
+:root {
+    --color-1: #fff;
+    --color-2: rgb(255,255,255,.6);
+    --color-3: #000;
+    --color-4: #00002c;
+    --color-5: #000024;
+    --color-6: #00b7c5;
+    --color-7: #08d3d3;     
+}
+
+html, body {
+    height: 100%;
+    background-color: #0f022c;
+}
+
+.container{
+    width: auto;
+    height: 100vh;
+    background-image: url(images/images/background.png);
+    background-position: center;
+    background-size:cover;
+    background-color: #00002c;
+    position: relative;
+    padding: 0 7%;
+    color: #fff;
+}
+nav{
+    width: 100%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 50px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+}
+nav ul li{
+    display: inline-block;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+nav .btn{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.content{
+    margin-top: 10%;
+}
+.content h1{
+    font-size: 75px;
+    margin-bottom: 20px;
+}
+.content h1 span{
+    color: #ff960b;
+}
+.content p{
+    line-height: 22px;
+    font-size: 20px;
+}
+.content .btn{
+    display: inline-block;
+    margin-top: 30px;
+    background: #ff960b;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 30px;
+}
+.coin-list{
+    position: absolute;
+    right: 10%;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.coin{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 0 15px;
+    color: #ff960b;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+}
+.coin img{
+    width: 40px;
+    margin-right: 10px;
+}
+.coin h3{
+    color: #fff;
+    margin-bottom: 5px;
+    
+}
+.converter {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+}
+.converter::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(images/images/Crypto-Images/img/crypto\ bg.jpg)no-repeat center center/cover;
+}
+.converter h1 {
+    position: relative;
+    font-size: 30px;
+    padding-top: 50px;
+    align-items: center;
+    color: var(--color-1);
+    text-align: center;
+
+}
+.converter h1::before {
+    content:'';
+    position: absolute;
+    width: 50px;
+    height: 3.5px;
+    background: var(--color-6);
+    bottom: -20px;
+    left: 49%;
+    border-radius: 10px;    
+}
+.converter .cards{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin-top: 100px;
+}
+.converter .cards .card {
+    position:relative;
+    width: 380px;
+    height: 210px;
+}
+
+.converter .cards .card2 {
+    width: 50px;
+    height: 30px;
+    margin: 0px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--color-6);
+    color: var(--color-1);
+}
+.converter .cards .card::before {
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #00002c80;
+    border-radius: 10px;
+}
+.converter .cards .card .select {
+    display: flex;
+    align-items: center;
+    color: var(--color-1);
+    margin: 30px 20px 0px 30px;
+}
+.converter .cards .card .select h4 {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-6);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgb(8, 211, 211, .5);
+}
+.converter .cards .card .select .select1 {
+    margin-left: 20px;
+
+}
+.converter .cards .card .select .select1 h6 {
+    color: var(--color-2);
+    margin-left: 5px;
+
+}
+.converter .cards .card .select .select1 .select {
+    width: 250px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    color: var(--color-1);
+    font-family: "poppins", sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.converter .cards .card .select .select1 .select option {
+    background: #00fff280;
+}
+
+.converter .cards .card .enter_bitcoin {
+    margin: 40px 40px 5px 40px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #d0498d;
+    color: var(--color-1);
+}
+
+.converter .cards .card .enter_bitcoin input {
+    border: none;
+    outline: none;
+    background: transparent;
+    color: var(--color-1);
+    font-size: 25px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.converter .cards .card p {
+    margin: 0px 40px;
+    font-size: 12px;
+    color: var(--color-1);
+}

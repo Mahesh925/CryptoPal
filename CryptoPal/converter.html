@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Cryptocurrency</title>
+        <link rel=" stylesheet" href="style6.css">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js" 
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" 
+        crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+              <a href="index.html">
+                <img src="images/images/logo.png" class="logo">
+            </a>
+            <ul>
+                <li><a href="market.html">MARKET</a></li>
+                <li><a href="converter.html">CONVERTER</a></li>
+                <li><a href="info.html">INFO</a></li>
+                
+                </ul>
+                <a href="#" class="btn">EN</a>
+            </nav>
+<!-- main section -->
+    <main>
+      <!-- Crypto converter section -->
+      <section class="converter-section">
+        <h2>Crypto Currency Converter</h2>
+        <form onsubmit="getExchangeData(event.preventDefault())">
+          <div class="cards">
+
+
+            <div class="card">
+                <div class="select">
+                    <h4 id="coin_first"></h4>
+                    <div class="select1">
+          <div class="form-container">
+            <div class="input-container">
+              <input
+                type="text"
+                name="from-crypto-currency"
+                list="from-crypto-currency-list"
+                placeholder="From Currency e.g. BTC"
+                id="from-currency"
+                required
+              />
+              <datalist id="from-crypto-currency-list">
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="BNB">BNB</option>
+                <option value="USDT">USDT</option>
+                <option value="SOL">SOL</option>
+                <option value="ADA">ADA</option>
+                <option value="XRP">XRP</option>
+                <option value="USDC">USDC</option>
+                <option value="LUNA">LUNA</option>
+                <option value="AVAX">AVAX</option>
+              </datalist>
+
+              <input
+                type="number"
+                name="from-currency-amount"
+                id="from-currency-amount"
+                min="0"
+                required
+              />
+            </div>
+            <span class="equal"> = </span>
+            <div class="input-container">
+              <input
+                type="text"
+                name="to-crypto-currency"
+                list="to-crypto-currency-list"
+                placeholder="To Currency e.g. USD"
+                id="to-currency"
+                required
+              />
+              <datalist id="to-crypto-currency-list">
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+                <option value="AUD">AUD</option>
+                <option value="CNY">CNY</option>
+                <option value="INR">INR</option>
+                <option value="EGP">EGP</option>
+                <option value="CHF">CHF</option>
+                <option value="GBP">GBP</option>
+                <option value="OMR">OMR</option>
+                <option value="KWD">KWD</option>
+                <option value="BTC">BTC</option>
+                <option value="ETH">ETH</option>
+                <option value="BNB">BNB</option>
+                <option value="USDT">USDT</option>
+                <option value="SOL">SOL</option>
+                <option value="ADA">ADA</option>
+                <option value="XRP">XRP</option>
+                <option value="USDC">USDC</option>
+                <option value="LUNA">LUNA</option>
+                <option value="AVAX">AVAX</option>
+              </datalist>
+              <input
+                type="number"
+                name="to-currency-amount"
+                id="to-currency-amount"
+                disabled
+              />
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn">Convert</button>
+            <button type="reset" class="btn">reset</button>
+          </div>
+        </form>
+      </section>
+    <script src="./app.js"></script>
+  </body>
+</html>
